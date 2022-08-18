@@ -3,19 +3,8 @@
 body {
 	font-family: 'Zen Maru Gothic', sans-serif;
 	color: #2e8b57;
-	position: relative;
-	background: transparent;
 	background-color: rgb(183, 241, 183);
 	margin: 0;
-	padding: 0;
-}
-
-body::before {
-	content: "";
-	left: 0;
-	right: 0;
-	top: 0;
-	background-size: cover;
 }
 
 a {
@@ -61,29 +50,45 @@ a:hover {
 }
 
 /* ABOUT */
+.about {
+	display: inline;
+}
+.content {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 
 .about .img-fluid {
-	max-width: 45%;
-	height: auto;
-	padding: 1rem 1rem;
-}
-@media (max-width: 768px) {
-	.about .img-fluid {
-		max-width: 100%;
-		height: auto;
-	}
-}
-@media (max-width: 992px) {
-	.about .img-fluid {
-		max-width: 80%;
-		height: auto;
-	}
+	height: 600px;
+	width: auto;
 }
 .about .description {
-	position: absolute;
-	top: 40%;
-	left: 20%;
-	width: 70%;
-	height: auto;
 	background-color: rgba(245, 222, 179, 0.788);
+	margin: 0 30%;
+}
+
+.about .description h2 {
+	font-size: 2.5rem;
+}
+
+.about .description p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+/* PLAYNOW */
+
+.playnow::before {
+	display: block;
+	position: relative;
+	top: 0;
+	content: "";
+	width: 100%;
+	min-height: 100%;
+	opacity: 0.5;
+}
+
+.playnow video {
+	width: 1349px;
+	height: auto;
+	object-fit: contain;
 }
