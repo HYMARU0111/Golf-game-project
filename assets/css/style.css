@@ -1,0 +1,89 @@
+/* General */
+
+body {
+	font-family: 'Zen Maru Gothic', sans-serif;
+	color: #2e8b57;
+	position: relative;
+	background: transparent;
+	background-color: rgb(183, 241, 183);
+	margin: 0;
+	padding: 0;
+}
+
+body::before {
+	content: "";
+	left: 0;
+	right: 0;
+	top: 0;
+	background-size: cover;
+}
+
+a {
+	color: #3cb371;
+}
+
+a:hover {
+	color: #27bd6a;
+	text-decoration: none;
+}
+
+/* HEADER */
+
+#header {
+	position: relative;
+	width: 100%;
+	height: 40pt;
+	margin: 0;
+	display: flex;
+	overflow-y: auto;
+	background: rgba(0, 0, 0, 0.438);
+	z-index: 2;
+}
+#header * {
+	transition: ease-in-out 0.15s;
+}
+
+#header h1 {
+	font-size: 24pt;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+#header .language {
+	position: absolute;
+	top: 10pt;
+	right: 30pt;
+	height: 18pt;
+}
+#header .language img {
+	top: 20pt;
+	height: 18pt;
+}
+
+/* ABOUT */
+
+.about .img-fluid {
+	max-width: 45%;
+	height: auto;
+	padding: 1rem 1rem;
+}
+@media (max-width: 768px) {
+	.about .img-fluid {
+		max-width: 100%;
+		height: auto;
+	}
+}
+@media (max-width: 992px) {
+	.about .img-fluid {
+		max-width: 80%;
+		height: auto;
+	}
+}
+.about .description {
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	width: 70%;
+	height: auto;
+	background-color: rgba(245, 222, 179, 0.788);
+}
