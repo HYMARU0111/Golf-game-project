@@ -2,93 +2,152 @@
 
 body {
 	font-family: 'Zen Maru Gothic', sans-serif;
-	color: #2e8b57;
-	background-color: rgb(183, 241, 183);
-	margin: 0;
+	color: #27744a;
+	background: #52fa9d;
+	position: relative;
+	background: transparent;
+	margin-bottom: 0;
 }
-
+body::before {
+	content: "";
+	position: fixed;
+	background: #52fa9d;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	z-index: -1;
+}
 a {
 	color: #3cb371;
 }
 
 a:hover {
-	color: #27bd6a;
+	color: #15462b;
 	text-decoration: none;
 }
 
-/* HEADER */
+section {
+	padding: 15px 0 0;
+}
 
-#header {
+.back-to-top-css {
+	cursor: pointer;
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+	display: none;
+	z-index: 9999;
+}
+
+/* Navbar */
+
+nav .navbar {
+	margin: 0;
+	padding: 10pt 30pt;
+}
+
+nav .navbar-nav .language {
 	position: relative;
-	width: 100%;
-	height: 40pt;
-	margin: 0;
-	display: flex;
-	overflow-y: auto;
-	background: rgba(0, 0, 0, 0.438);
-	z-index: 2;
 }
-#header * {
-	transition: ease-in-out 0.15s;
-}
-
-#header h1 {
-	font-size: 24pt;
-	margin: 0;
-	font-family: 'Poppins', sans-serif;
-}
-
-#header .language {
-	position: absolute;
-	top: 10pt;
-	right: 30pt;
-	height: 18pt;
-}
-#header .language img {
+nav .navbar-nav .language img {
 	top: 20pt;
 	height: 18pt;
 }
 
-/* ABOUT */
-.about {
-	display: inline;
-}
-.content {
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
+/* Playnow*/
 
-.about .img-fluid {
-	height: 600px;
-	width: auto;
-}
-.about .description {
-	background-color: rgba(245, 222, 179, 0.788);
-	margin: 0 30%;
-}
-
-.about .description h2 {
-	font-size: 2.5rem;
-}
-
-.about .description p {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-/* PLAYNOW */
-
-.playnow::before {
-	display: block;
+#playnow {
+	transition: ease-in-out 0.3s;
 	position: relative;
-	top: 0;
-	content: "";
-	width: 100%;
-	min-height: 100%;
-	opacity: 0.5;
+	display: block;
+	height: 80vh;
+	align-items: center;
+	z-index: 999;
+	overflow-y: auto;
+	text-align: center;
+	margin-top: 200px;
 }
 
-.playnow video {
-	width: 1349px;
-	height: auto;
-	object-fit: contain;
+#playnow * {
+	transition: ease-in-out 0.4s;
 }
+
+#playnow h1 {
+	font-size: 65px;
+	font-family: 'Poppins' sans-serif;
+}
+
+#playnow p {
+	font-size: 30px;
+}
+
+/* ABOUT */
+.about main {
+	margin: 0 50px;
+	background-color: rgba(240, 248, 255, 0.425);
+	border-radius: 12px;
+}
+
+.about main h1 {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}
+
+.about main p {
+	line-height: 2rem;
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+/* Carousel base class */
+.carousel {
+	margin-bottom: 4rem;
+	border: 5px double #15462b;
+	border-radius: 5px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	bottom: 3rem;
+	z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+	height: 32rem;
+}
+.carousel-item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: auto;
+}
+
+/* Description */
+
+#description {
+	margin-bottom: 4rem;
+	position: relative;
+	align-items: center;
+	height: 50vh;
+	display: flex;
+	z-index: 999;
+	overflow-y: auto;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#description h2 {
+	font-size: 45px;
+	text-align: center;
+}
+
+#description :hover {
+	color: black;
+}
+
+/* PLAYNOW */
