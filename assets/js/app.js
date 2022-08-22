@@ -15,3 +15,45 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$(document).scroll(function () {
+    $("#navbar").toggleClass("scrolled", $(this).scrollTop() > $("#navbar").height());
+});
+
+$(document).scroll(function () {
+    if ($(this).scrollTop() > $('.about').offset().top) {
+        $("#playnowbutton").css("visibility", "visible")
+    } else {
+        $("#playnowbutton").css("visibility", "hidden")
+    }
+});
+
+
+$("li.credit")
+    .mouseenter(function () {
+        $("img", this).css("width", "120px");
+    })
+    .mouseleave(function () {
+        $("img", this).css("width", "100px");
+    });
+
+
+window.fbAsyncInit = function() {
+FB.init({
+    appId      : '576268950869600',
+    cookie     : true,
+    xfbml      : true,
+    version    : '{api-version}'
+});
+    
+FB.AppEvents.logPageView();   
+    
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));

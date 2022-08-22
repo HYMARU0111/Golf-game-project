@@ -19,21 +19,29 @@ body::before {
 	height: 100vh;
 	z-index: -1;
 }
-a {
-	color: #3cb371;
+
+::-webkit-scrollbar {
+	width: 20px;
 }
 
-a:hover {
-	color: #15462b;
-	text-decoration: none;
+::-webkit-scrollbar-track {
+	background: oldlace;
 }
 
+::-webkit-scrollbar-thumb {
+	background: #52fa9e80;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: palegreen;
+}
 section {
 	padding: 15px 0 0;
 }
 
 .back-to-top-css {
 	cursor: pointer;
+	background: palegreen;
 	position: fixed;
 	bottom: 15px;
 	left: 15px;
@@ -42,10 +50,17 @@ section {
 }
 
 /* Navbar */
+nav a {
+	color: #15462b;
+}
 
+nav a:hover {
+	color: black;
+	font-weight: 600;
+}
 nav .navbar {
 	margin: 0;
-	padding: 10pt 30pt;
+	padding: 0 30pt 0;
 }
 
 nav .navbar-nav .language {
@@ -54,6 +69,17 @@ nav .navbar-nav .language {
 nav .navbar-nav .language img {
 	top: 20pt;
 	height: 18pt;
+}
+
+#navbar.scrolled {
+	background: rgba(133, 134, 126, 0.7);
+	transition: background 500ms;
+}
+
+nav #playnowbutton {
+	visibility: hidden;
+	background-color: honeydew;
+	border-radius: 15px;
 }
 
 /* Playnow*/
@@ -151,3 +177,38 @@ nav .navbar-nav .language img {
 }
 
 /* PLAYNOW */
+
+/* FOOTER */
+footer {
+	background-color: grey;
+}
+
+footer h3 {
+	font-size: 45px;
+	font-family: 'Poppins', sans-serif;
+}
+
+footer ul {
+	list-style: none;
+	margin: auto;
+	text-align: center;
+}
+footer li {
+	margin: 40px 20px;
+}
+
+footer .credit img {
+	width: 100px;
+	transition: 0.3s;
+	border: solid 1px black;
+	border-radius: 40%;
+	background: blanchedalmond;
+}
+
+footer .sharing {
+	margin: 0;
+	padding: 25px 0;
+	width: auto;
+	background: rgb(99, 134, 114);
+	text-align: center;
+}
