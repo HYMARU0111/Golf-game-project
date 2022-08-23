@@ -43,7 +43,7 @@ FB.init({
     appId      : '576268950869600',
     cookie     : true,
     xfbml      : true,
-    version    : '{api-version}'
+    version    : 'v8.0'
 });
     
 FB.AppEvents.logPageView();   
@@ -57,3 +57,11 @@ FB.AppEvents.logPageView();
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    display: 'popup',
+    method: 'share',
+    href: 'https://hymaru0111.github.io/Golf-game-project/',
+  }, function(response){});
+}
