@@ -111,12 +111,12 @@ nav #playnowbutton {
 }
 
 #playbutton :hover {
-	background-color: rgb(189, 56, 8);
+	background-color: rgb(189, 56, 8, 0.6);
 	border-radius: 20px;
 }
 
 #playbutton {
-	background: orangered;
+	background: rgba(255, 68, 0, 0.6);
 	width: 45%;
 	border-radius: 20px;
 	margin: auto;
@@ -129,7 +129,7 @@ nav #playnowbutton {
 
 @media (max-width: 768px) {
 	#playbutton h2 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 }
 
