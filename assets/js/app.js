@@ -35,33 +35,18 @@ $("li.credit")
     })
     .mouseleave(function () {
         $("img", this).css("width", "100px");
-    });
+    }
+);
 
 
-window.fbAsyncInit = function() {
-FB.init({
-    appId      : '576268950869600',
-    cookie     : true,
-    xfbml      : true,
-    version    : 'v8.0'
-});
-    
-FB.AppEvents.logPageView();   
-    
-};
 
-(function(d, s, id){
+
+(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
+    if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-document.getElementById('shareBtn').onclick = function() {
-  FB.ui({
-    display: 'popup',
-    method: 'share',
-    href: 'https://hymaru0111.github.io/Golf-game-project/',
-  }, function(response){});
-}
+    }(document, 'script', 'facebook-jssdk')
+);
+    

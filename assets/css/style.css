@@ -93,11 +93,8 @@ nav #playnowbutton {
 	z-index: 999;
 	overflow-y: auto;
 	text-align: center;
-	margin-top: 200px;
-}
-
-#playnow * {
-	transition: ease-in-out 0.4s;
+	margin-top: 150px;
+	color: white;
 }
 
 #playnow h1 {
@@ -107,6 +104,27 @@ nav #playnowbutton {
 
 #playnow p {
 	font-size: 30px;
+	margin-bottom: 10%;
+}
+#playnow a {
+	text-decoration: none;
+}
+
+#playbutton :hover {
+	background-color: rgb(189, 56, 8);
+	border-radius: 20px;
+}
+
+#playbutton {
+	background: orangered;
+	width: 30%;
+	border-radius: 20px;
+	margin: auto;
+	transition: ease-in-out 0.1s;
+}
+
+#playbutton h2 {
+	font-size: 45px;
 }
 
 /* ABOUT */
@@ -211,4 +229,12 @@ footer .sharing {
 	width: auto;
 	background: rgb(99, 134, 114);
 	text-align: center;
+}
+
+footer p {
+	color: darkgrey;
+}
+
+footer a .ideaboard {
+	text-decoration: none !important;
 }
