@@ -88,12 +88,12 @@ nav #playnowbutton {
 	transition: ease-in-out 0.3s;
 	position: relative;
 	display: block;
-	height: 80vh;
 	align-items: center;
 	z-index: 999;
 	overflow-y: auto;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 16%;
+	margin-bottom: 10%;
 	color: white;
 }
 
