@@ -29,7 +29,7 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #52fa9e80;
+	background: #52fa9d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -117,7 +117,7 @@ nav #playnowbutton {
 
 #playbutton {
 	background: orangered;
-	width: 30%;
+	width: 45%;
 	border-radius: 20px;
 	margin: auto;
 	transition: ease-in-out 0.1s;
@@ -125,6 +125,12 @@ nav #playnowbutton {
 
 #playbutton h2 {
 	font-size: 45px;
+}
+
+@media (max-width: 768px) {
+	#playbutton h2 {
+		font-size: 35px;
+	}
 }
 
 /* ABOUT */
