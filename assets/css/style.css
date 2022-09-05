@@ -2,8 +2,8 @@
 
 body {
 	font-family: 'Zen Maru Gothic', sans-serif;
-	color: #27744a;
-	background: #52fa9d;
+	color: #2b580c;
+	background: #639a67;
 	position: relative;
 	background: transparent;
 	margin-bottom: 0;
@@ -11,13 +11,22 @@ body {
 body::before {
 	content: "";
 	position: fixed;
-	background: #52fa9d;
+	background: #639a67;
 	background-size: cover;
 	left: 0;
 	right: 0;
 	top: 0;
 	height: 100vh;
 	z-index: -1;
+}
+a {
+	text-decoration: none;
+	color: #2b580c;
+}
+
+a :hover {
+	color: #0f301e;
+	text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +38,7 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #52fa9d;
+	background: #639a67;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -51,7 +60,7 @@ section {
 
 /* Navbar */
 nav a {
-	color: #15462b;
+	color: #2b580c;
 }
 
 nav a:hover {
@@ -97,6 +106,10 @@ nav #playnowbutton {
 	color: white;
 }
 
+#playnow .titlepart {
+	height: 80vh;
+}
+
 #playnow h1 {
 	font-size: 65px;
 	font-family: 'Poppins' sans-serif;
@@ -110,21 +123,32 @@ nav #playnowbutton {
 	text-decoration: none;
 }
 
-#playbutton :hover {
-	background-color: rgb(189, 56, 8, 0.6);
-	border-radius: 20px;
+#playnow .videopart {
+	background-color: #d9bf77;
+	margin: 0;
+	height: 450px;
+	align-items: center;
 }
 
 #playbutton {
-	background: rgba(255, 68, 0, 0.6);
+	background: #d8ebb5;
 	width: 45%;
 	border-radius: 20px;
-	margin: auto;
-	transition: ease-in-out 0.1s;
+	margin: 30pt auto 30pt auto;
+	transition: ease-in-out 0.3s;
+	border: dashed;
+}
+
+#playbutton :hover {
+	background-color: rgba(243, 152, 119, 0.6);
+	color: #ffffff;
+	border-radius: 20px;
+	transition: ease-in-out 0.3s;
 }
 
 #playbutton h2 {
 	font-size: 45px;
+	margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -188,7 +212,7 @@ nav #playnowbutton {
 	z-index: 999;
 	overflow-y: auto;
 	text-align: left;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: #d9bf77;
 }
 
 #description h2 {
@@ -227,6 +251,10 @@ footer .credit img {
 	border: solid 1px black;
 	border-radius: 40%;
 	background: blanchedalmond;
+}
+
+footer .icofont-github {
+	font-size: 25px;
 }
 
 footer .sharing {
