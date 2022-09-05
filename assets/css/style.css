@@ -63,7 +63,8 @@ section {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 1;
+	transform: translate(5%, 5%);
 }
 .cursor img {
 	width: 20px;
@@ -140,6 +141,13 @@ nav #playnowbutton {
 	margin: 0;
 	height: 450px;
 	align-items: center;
+	z-index: 1;
+}
+
+@media (max-width: 576px) {
+	.videopart video {
+		width: 450px;
+	}
 }
 
 #playbutton {
@@ -246,11 +254,17 @@ nav #playnowbutton {
 /* FOOTER */
 footer {
 	background-color: grey;
+	color: darkgrey;
+}
+
+footer a {
+	z-index: 1000;
 }
 
 footer h3 {
 	font-size: 45px;
 	font-family: 'Poppins', sans-serif;
+	color: #2b580c;
 }
 
 footer ul {
@@ -283,11 +297,10 @@ footer .sharing {
 	text-align: center;
 }
 
-footer p {
-	color: darkgrey;
-	text-decoration: none;
+footer .sharing {
+	font-size: 20px;
 }
 
-footer a .ideaboard {
-	text-decoration: none;
+.ideaboard {
+	z-index: 400 !important;
 }
