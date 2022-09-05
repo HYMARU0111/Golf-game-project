@@ -63,7 +63,7 @@ section {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 500;
+	z-index: 99;
 }
 .cursor img {
 	width: 20px;
@@ -213,6 +213,11 @@ nav #playnowbutton {
 	height: auto;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+	z-index: 500;
+}
+
 /* Description */
 
 #description {
@@ -221,7 +226,6 @@ nav #playnowbutton {
 	align-items: center;
 	height: 50vh;
 	display: flex;
-	z-index: 999;
 	overflow-y: auto;
 	text-align: left;
 	background-color: #d9bf77;
@@ -230,6 +234,7 @@ nav #playnowbutton {
 #description h2 {
 	font-size: 45px;
 	text-align: center;
+	z-index: 100;
 }
 
 #description :hover {
@@ -255,6 +260,7 @@ footer ul {
 }
 footer li {
 	margin: 40px 20px;
+	z-index: 900;
 }
 
 footer .credit img {
@@ -279,8 +285,9 @@ footer .sharing {
 
 footer p {
 	color: darkgrey;
+	text-decoration: none;
 }
 
 footer a .ideaboard {
-	text-decoration: none !important;
+	text-decoration: none;
 }
