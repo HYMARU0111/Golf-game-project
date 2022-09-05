@@ -7,6 +7,7 @@ body {
 	position: relative;
 	background: transparent;
 	margin-bottom: 0;
+	cursor: none;
 }
 body::before {
 	content: "";
@@ -55,7 +56,18 @@ section {
 	bottom: 15px;
 	left: 15px;
 	display: none;
-	z-index: 9999;
+	z-index: 998;
+}
+
+.cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
+.cursor img {
+	width: 20px;
+	height: 20px;
 }
 
 /* Navbar */

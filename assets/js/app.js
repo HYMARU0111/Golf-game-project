@@ -38,8 +38,17 @@ $("li.credit")
     }
 );
 
+$(document).ready(function () {
+    $(document).mousemove(function (e) {
+        let mouseX = e.clientX;
+        let mouseY = e.clientY;
 
-
+        $('.cursor').css({
+            left: mouseX + "px",
+            top: mouseY + "px"
+        })
+    })
+})
 
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
