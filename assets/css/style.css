@@ -126,14 +126,21 @@ nav #playnowbutton {
 #playnow h1 {
 	font-size: 65px;
 	font-family: 'Poppins' sans-serif;
+	font-weight: 700;
 }
 
 #playnow p {
 	font-size: 30px;
+	margin-top: 20px;
 	margin-bottom: 10%;
 }
 #playnow a {
 	text-decoration: none;
+}
+
+#playnow :hover {
+	color: #d9bf77;
+	transition: ease-in-out 0.3s;
 }
 
 #playnow .videopart {
@@ -246,7 +253,14 @@ nav #playnowbutton {
 }
 
 #description :hover {
-	color: black;
+	color: rgb(233, 247, 220);
+	font-weight: 600;
+}
+
+#description p {
+	font-size: 30px;
+	margin-top: auto;
+	text-align: center;
 }
 
 /* PLAYNOW */
